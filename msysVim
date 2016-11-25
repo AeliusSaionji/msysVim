@@ -1,0 +1,7 @@
+#!/bin/sh
+
+
+ drv=$(echo "$@" | colrm 2 | tr '[:upper:]' '[:lower:]')
+args=$(echo "$@" | sed -e 's/\\/\//g' -e "s/^\w:/\/$drv/")
+
+vim "$args"
