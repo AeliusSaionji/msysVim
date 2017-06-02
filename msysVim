@@ -1,6 +1,5 @@
 #!/bin/sh
 
- drv=$(printf '%s' "$@" | colrm 2 | tr '[:upper:]' '[:lower:]')
-args=$(printf '%s' "$@" | sed -e 's/\\/\//g' -e "s/^\w:/\/$drv/")
+args=$(cygpath "$@")
 
 vim "$args"
