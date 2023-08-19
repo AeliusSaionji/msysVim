@@ -24,6 +24,7 @@ Use the provided PKGBUILD!
 4. (Optional) Create a .profile with any vim-specific settings you may have configured in other shells.  
 Or, modify the registry file and batch script to use your shell of choice.
 
+---
 
 ![Context](context.png)
 ![Shell](shell.png)
